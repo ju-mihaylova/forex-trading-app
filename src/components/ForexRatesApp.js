@@ -44,6 +44,7 @@ class ForexRatesApp extends Component {
           counter: prevState.counter + 5000
         };
       });
+      console.log(this.state.counter);
     }, 5000);
   };
 
@@ -65,7 +66,7 @@ class ForexRatesApp extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (prevState.counter === 299999) {
+    if (prevState.counter === 295000) {
       clearInterval(this.state.intervalId);
     }
   }
