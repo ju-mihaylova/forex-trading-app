@@ -1,0 +1,92 @@
+/* container */
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Colors */
+.red {
+  background: #c02d28;
+}
+
+.green {
+  background: #36b85b;
+}
+
+/* Header */
+.header {
+  background: #19708f;
+  color: white;
+  padding: 2rem 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.header-date {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 350px) {
+  .header {
+    padding: 1rem 0;
+  }
+  .header-flex {
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-date {
+    font-size: 1.2rem;
+  }
+}
+
+/* Rates Widget */
+.rate-item {
+  background: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.rate-item:last-child {
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.rate-pill {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.rate-abbreviation {
+  color: #4ea8f2;
+  margin: 10px 0 5px 0;
+}
+
+.currency {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 10px 0;
+}
